@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Alicia Wang portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "concurrently \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "browser-sync": "^2.23.6",
+    "cssmin": "^0.4.3",
+    "del": "^3.0.0",
+    "fullpage.js": "^3.0.7",
+    "htmlmin": "0.0.7",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^2.6.2",
+    "time-grunt": "^1.4.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-social": "^5.1.1",
+    "concurrently": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.12.9",
+    "scss": "^0.2.4",
+    "watch": "^1.0.2",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,111 @@
+
+$total-lines: 2;
+
+$clip-height: 7vw;
+$line-height: $clip-height - 2vw;
+
+$background-color: #5138BE;
+
+html {
+  background-color: $background-color;
+  height: 100%;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.row-header {
+  height: 100vh;
+  padding-top: 100px;
+}
+.row-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+body {
+  color: #FFFFFF;
+  display: flex;
+  background-color: $background-color;
+}
+
+/*
+** Apply styles to the parent element
+*/
+.words {
+  // Sort out nasty text fuzz
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.words-line {
+  height: $clip-height;
+  overflow: hidden;
+  position: relative;
+}
+
+/*intro section*/
+h1 {
+  height: $clip-height;
+  line-height: $line-height;
+  padding: 0 10px;
+  transition: all .4s ease-in-out;
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+/*works section*/
+h2 {
+  height: 3vw;
+  line-height: 5vw;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.stroke {
+  color: white;
+  -webkit-text-fill-color: $background-color; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.words-line:hover {
+  .down {
+    transform: translate3d(0, -($clip-height), 0);
+  }
+  .up {
+    transform: translate3d(0, -($clip-height), 0);
+  }
+}
+
+.intro {
+  padding-bottom: 2px;
+  padding-left: 10px;
+  color: white;
+  position: relative;
+  transition: color .4s ease-out;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+
+.fa-newspaper {
+  color: white;
+}
+
+.btn {
+ margin-top: 20px;
+  color: $background-color;
+  border-radius: 12px;
+  background-color: white;
+}
+
+p {
+  font-size: 20px;
+}
