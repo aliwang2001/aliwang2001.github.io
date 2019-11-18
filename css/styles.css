@@ -1,168 +1,78 @@
-html {
-  scroll-behavior: smooth;
-  background-color: #5138BE;
-  height: 100%;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; }
-
-.row-header {
-  height: 100vh;
-  padding-top: 100px; }
-
-.row-content {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
 body {
-  color: #FFFFFF;
-  display: flex;
-  background-color: #5138BE; }
-
-/*
-** Apply styles to the parent element
-*/
-.words {
-  transform: translate3d(0, 0, 0);
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
-
-.words-line {
-  height: 7vw;
-  overflow: hidden;
-  position: relative; }
-
-/*intro section*/
-h1 {
-  height: 7vw;
-  line-height: 5vw;
-  padding: 0 10px;
-  transition: all .4s ease-in-out;
-  vertical-align: top;
-  white-space: nowrap;
-  font-size: 6vw;
-  font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase; }
-
-/*works section*/
-h2 {
-  height: 3vw;
-  line-height: 5vw;
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: -2px; }
-
-.stroke {
-  color: white;
-  -webkit-text-fill-color: #5138BE;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white; }
-
-.words-line:hover .down {
-  transform: translate3d(0, -7vw, 0); }
-
-.words-line:hover .up {
-  transform: translate3d(0, -7vw, 0); }
-
-.intro {
-  padding-bottom: 2px;
-  margin-left: 60px;
-  color: white;
-  position: relative;
-  transition: color .4s ease-out;
-  font-size: 6vw;
-  font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase; 
-  text-align: center;
+  padding-top: 20vh;
 }
 
-.fa-newspaper {
-  color: white; }
+a {
+  border-bottom: none !important;
+  color: black;
+}
 
-.btn {
-  margin-top: 20px;
-  color: #5138BE;
-  background-color: white; }
+a:link, a:visited, a:hover, a:active {
+    color: black;
+}
 
-p {
-  font-size: 20px; }
+.title {
+	padding-bottom: 5vh;
+}
+.space {
+	padding-top: 5vh;
+}
 
+.hashtag {
+	color: #999999;
+}
 
-  a {
-    color: white;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-  }
-  
-  a:hover {
-    color: whitesmoke;
-    right: 0;
-    text-decoration: none;
-  }
-  
-  a:hover:after {
-    border-color: white;
-    right: 0;
-  }
-  
-  a:after {
-    border-radius: 1em;
-    border-top: .1em solid white;
-    content: "";
-    position: absolute;
-      right: 100%;
-      bottom: .14em;
-      left: 0;
-    transition: right .4s cubic-bezier(0,.5,0,1),
-                border-color .4s ease-out;
-  }
-  
-  a:hover:after {
-    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-    border-color: white;
-  }
-  
-  @keyframes anchor-underline {
-    0%, 10% {
-      left: 0;
-      right: 100%;
-    }
-    40%, 60% {
-      left: 0;
-      right: 0;
-    }
-    90%, 100% {
-      left: 100%;
-      right: 0;
-    }
-  }
+.card {
+	border: none;
+	background-color: #F5F5F5;
+	border-width: 0;
+}
 
-  img {
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
+.card-deck{
+    bottom-margin: 50px;
+}
 
-  @media only screen and (max-width: 600px) {
-    .row-header {
-      height: 40vh;
-      padding-top: 40vh;
-      padding-bottom: 50vh;
-     }
-    
-    .row-content {
-      padding-top: 100px;
-      padding-bottom: 100px; }
+.navbar {
+	background-color: #ffffff;
+}
 
-    h2 {
-      font-size: 30px;
-    }
-    img {
-      padding-bottom: 20px;
-    }
-    .res {
-      text-align: left;
-      padding-left: 40px;
-    }
-  }
+.r-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #ffb3ba 70%);
+    display: inline;
+}
+.o-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #ffdfba 70%);
+    display: inline;
+}
+.y-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #ffffba 70%);
+    display: inline;
+}
+.g-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #baffc9 70%);
+    display: inline;
+}
+.b-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #bae1ff 70%);
+    display: inline;
+}
+
+.p-highlight {
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #b19cd9 70%);
+    display: inline;
+}
+
+/*
+#ffb3ba	(255,179,186)
+#ffdfba	(255,223,186)
+#ffffba	(255,255,186)
+#baffc9	(186,255,201)
+#bae1ff	(186,225,255)
+b19cd9
+*/
+
