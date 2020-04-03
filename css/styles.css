@@ -30,12 +30,9 @@ a:link, a:visited, a:hover, a:active {
 .card {
 	border: none;
 	background-color: #F5F5F5;
-	border-width: 0;
+    border-width: 0;
 }
 
-.card-deck{
-    bottom-margin: 50px;
-}
 
 .navbar {
 	background-color: #ffffff;

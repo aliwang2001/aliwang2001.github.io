@@ -73,8 +73,47 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-body">
+            <h2 class="card-title y-highlight">orchestrator (ongoing!)</h2>
+            <p class="card-text hashtag">#ucberkeley #launchpad #AI #ML #projectteam #music #autoencoders</p>
+            <p class="card-text"><b>universal music translation network</b>
+              <br/>
+              Our goal for the project is to replicate the results of the Facebook research, A Universal Music Translation Network, by rebuilding the network and running 
+              further experiments.
+              To break the network down, it has encoder network that encodes inputs into a representation that, theoretically, doesn’t include any instrumentation details (“domain specific information”).
+              A decoder can convert the encoder output into an audio file with a specific instrumentation. Each instrumentation (“domain”) has its own decoder.
+              However, the whole network is pretty computationally expensive, so we are experimenting with:
+              <ul>
+                <li>Speeding up training - using different inputs, testing different complexities, hyperparameters</li>
+                <li>Creating a music classifier and comparing with the latent vectors to see if any insight can be gained there</li>
+              </ul>
+            </p>
+            <a class="y-highlight" data-toggle="collapse" data-target="#musecage" aria-expanded="false" aria-controls="musecage">more info</a>
+            <div class="collapse multi-collapse" id="musecage">
+              See our BLOG below for a detailed overview of our project!
+            </div>
+            <p class="card-text">
+              <i>project made in launchpad, a uc berkeley student org</i>
+          </p>
+          </div>
+          <img src="media/umtn.png" class="card-img-top" alt="umtn">
+          <div class="card-footer">
+            <a href="https://orchestrator-ai.github.io/" class="y-highlight">blog</a>
+            <a href="https://research.fb.com/publications/a-universal-music-translation-network/" class="y-highlight">Facebook research</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="space"></div>
+
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
             <h2 class="card-title y-highlight">musecage</h2>
-            <p class="card-text hashtag">#ucberkeley #launchpad #AI #ML #projectteam</p>
+            <p class="card-text hashtag">#ucberkeley #launchpad #AI #ML #projectteam #Q&A #CV #NLP</p>
             <p class="card-text"><b>visual question answering model</b>
               <br/>
               The goal of the project was to build a network that would be able to answer a question about a given image. Our research focused mostly on working with computer vision and natural language processing, finding the best word embeddings for our questions (GloVe, Word2Vec, RNNs), and figuring out how to implement our own FCNN and attention models.
@@ -133,7 +172,8 @@
             <p class="card-text hashtag">#ucberkeley #calhacks #project #api</p>
             <p class="card-text"><b>spotify api project</b>
               <br/>
-              final showcase project
+              Uses music theory and algorithms to find musical chords in any available Spotify song.
+              *final showcase project*
             </p>
             <a class="g-highlight" data-toggle="collapse" data-target="#musecage" aria-expanded="false" aria-controls="musecage">more info</a>
             <!-- <div class="collapse multi-collapse" id="musecage">
