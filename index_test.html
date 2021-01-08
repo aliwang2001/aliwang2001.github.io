@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Folded Layout | Demo 4 | Codrops</title>
+    <meta name="description" content="An experiemntal 3D layout technique for HTML elements." />
+    <meta name="keywords" content="3d, layout, html, css, bending, javascript, demo" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/follow.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171601537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-171601537-1');
+    </script>
+
+    <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e,
+            t = document.createElement("style");
+        return (
+            (t.innerHTML = "root: { --tmp-var: bold; }"),
+            document.head.appendChild(t),
+            (e = !!(
+                window.CSS &&
+                window.CSS.supports &&
+                window.CSS.supports("font-weight", "var(--tmp-var)")
+            )),
+            t.parentNode.removeChild(t),
+            e
+        );
+    };
+    supportsCssVars() ||
+        alert(
+            "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+</head>
+
+<body class="demo-4 loading">
+    <main>
+        <div class="message">Note: This website is best viewed on a computer.</div>
+        <div class="frame">
+            <h1 class="frame__title"><a href="mailto:aliciawang@berkeley.edu">aliciawang@berkeley.edu</a></h1>
+            <div class="frame__links">
+                <a href="">Home</a>
+                <a href="">Works</a>
+                <a href="">Skills</a>
+                <a href="">LinkedIn</a>
+            </div>
+            <div class="frame__demos">
+                <a href="resume.pdf" class="frame__demo">Download Resume</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="fold-content" id="base-content">
+                <!-- CONTENT INSIDE HERE -->
+                <h2 class="content__headline">Think outside the box</h2>
+                <p class="content__type">
+                    Hey, I'm Alicia.
+                    I'm an <span class="highlight">EECS/Business</span> student at UC Berkeley and 
+                    love tinkering with new ideas and projects. 
+                    I'm passionate about <span class="highlight">startups</span>, <span class="highlight">AI/ML</span>, 
+                    <span class="highlight">UI/UX design</span>, and one day being a <span class="highlight">project manager</span>. 
+                    Catch me questioning the latest horror movie release or finding indie guitar songs
+                    to play with.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="content__headline">Featured Projects</h2>
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <div class="content_img">
+                            <img src="media/umtn.png" class="img-responsive" alt="umtn">
+                            <div class="overlay">
+                              <div class="text">Orchestrator: A universal music translation network, built with autoencoders.</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="content_img">
+                            <img src="media/musecage.png" class="img-responsive" alt="musecage">
+                            <div class="overlay">
+                              <div class="text">Musecage: A visual question answering model, built with CNNs, RNNs, and LSTMs.</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="content_img">
+                            <img src="media/dataselfie.png" class="img-responsive" alt="dataselfie">
+                            <div class="overlay">
+                              <div class="text">DataSelfie: Harvard research project on data visualization and human computer interaction.
+                                Published at CHI 2019.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="content_img">
+                            <img src="media/gitlet.png" class="img-responsive" alt="gitlet">
+                            <div class="overlay">
+                              <div class="text">Gitlet: Berkeley class project that replicates the functionality of Git. Built with Java.
+                                Published at CHI 2019.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="content__headline">Skills</h2>
+                    </div>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="screen">
+                <div class="folds" id="folds">
+                    <div class="fold fold-center" id="fold-center"></div>
+                    <div class="fold-3d fold-3d-top top-wrapper">
+                        <div class="fold fold-top" id="fold-top"></div>
+                    </div>
+                    <div class="fold-3d fold-3d-bottom bottom-wrapper">
+                        <div class="fold fold-bottom" id="fold-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-debug" id="btn-debug">See Planes</button>
+        </div>
+    </main>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/follow.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

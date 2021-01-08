@@ -16,6 +16,10 @@ a:link, a:visited, a:hover, a:active {
     color: black;
 }
 
+.right {
+  float: right;
+}
+
 .title {
 	padding-bottom: 5vh;
 }
@@ -27,12 +31,13 @@ a:link, a:visited, a:hover, a:active {
 	color: #999999;
 }
 
-.card {
-	border: none;
-	background-color: #F5F5F5;
-    border-width: 0;
+.tab-pane {
+  margin: 1.5em 1.5em 1.5em 1.5em;
 }
 
+.yellow {
+  color: #ffffba;
+}
 
 .navbar {
 	background-color: #ffffff;
@@ -60,8 +65,20 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .p-highlight {
-    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #b19cd9 70%);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #d2bcfb 70%);
     display: inline;
+}
+
+a.yellow {
+  color: #ffa600;
+}
+
+a.green {
+  color: #00ca2c;
+}
+
+a.blue {
+  color: #1d99ff;
 }
 
 /*
