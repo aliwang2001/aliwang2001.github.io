@@ -11,6 +11,9 @@ a {
   border-bottom: none !important;
   color: black;
 }
+.under {
+  text-decoration: underline;
+}
 
 a:link, a:visited, a:hover, a:active {
     color: black;

@@ -218,6 +218,10 @@ a:not([href]):hover {
   text-decoration: none;
 }
 
+.under {
+  text-decoration: underline;
+}
+
 pre,
 code,
 kbd,
@@ -417,7 +421,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.7rem;
-  font-weight: 650;
+  font-weight: 700;
 }
 
 h4, .h4 {
